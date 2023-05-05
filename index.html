@@ -12,11 +12,22 @@
       background-color: #8DB38B;
       background-size: cover;
       background-position: center;
-      color: #2A3C39;
       text-align: center;
       font-family: 'Montserrat', sans-serif;
-      margin-bottom: 20px;
     }
+    h1 {
+      color: #2A3C39;
+      display: inline-block;
+    }
+    h2 {
+      color: #66786A;
+      display: inline-block;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    /*h3 {
+      color: #2A3C39;
+    }*/
     /* Style the playlist grid */
     .playlist-grid {
       display: grid;
@@ -30,13 +41,43 @@
       height: 352px;
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Center the container horizontally */
+    }
+    .col {
+      flex: 0 0 400px;
+      margin: 10px;
+      box-sizing: border-box;
+    }
+    @media (max-width: 400px) {
+      .col {
+        flex: 0 0 100%;
+      }
+    }
     </style>
 </head>
 
 <body>
   <header>
-    <h1>Daniel's Favorite Albums</h1>
+    <h1>Favorite Albums</h1>
+    <h2>by Daniel Heins</h2>
   </header>
+  <div class="container">
+    <div class="col">
+      <h3>Basic Stats</h3>
+      <p>I made 22 playlists. Each one consists of full albums (or EPs) that I like. I recommend listening to them on Spotify, but you can preview them all here. The total length of all playlists is about 4000 tracks, or ~11 days.</p>
+    </div>
+    <div class="col">
+      <h3>Spotify Playlists</h3>
+      <p>I recently made the swap to listening to music on Spotify primarily. I wanted a way to keep track of all the favorite albums that I've ever listened to, and even though Spotify isn't a great tool for managing an album "collection", this is what I came up with.</p>
+    </div>
+    <div class="col">
+      <h3>Organization</h3>
+      <p>Each playlist has some sort of unique theme, or maybe a unifying genre or two. I hope you find some new music that speaks to you!</p>
+    </div>
+  </div>
   <div class="playlist-grid">
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0woiw3FN9sD994VfcL5MgZ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0LUta8IqzDDy8ZRr0q1GoT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
