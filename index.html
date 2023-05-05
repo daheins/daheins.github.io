@@ -7,6 +7,8 @@
   <title>Daniel's Favorite Albums: Spotify Playlists</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #8DB38B;
@@ -18,6 +20,7 @@
     h1 {
       color: #2A3C39;
       display: inline-block;
+      font-family: 'Poppins bold', sans-serif;
     }
     h2 {
       color: #66786A;
@@ -25,9 +28,12 @@
       margin-left: 10px;
       font-size: 20px;
     }
-    /*h3 {
+    h3 {
+      margin-left: -2px;
+    }
+    p {
       color: #2A3C39;
-    }*/
+    }
     /* Style the playlist grid */
     .playlist-grid {
       display: grid;
@@ -48,8 +54,21 @@
     }
     .col {
       flex: 0 0 400px;
-      margin: 10px;
+      margin: 15px;
       box-sizing: border-box;
+      text-align: left;
+    }
+    .left-line {
+      position: relative;
+      left: 10px;
+    }
+    .left-line::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 0;
+      bottom: 0;
+      border-left: 2px solid #2A3C39;
     }
     @media (max-width: 400px) {
       .col {
@@ -67,15 +86,15 @@
   <div class="container">
     <div class="col">
       <h3>Basic Stats</h3>
-      <p>I made 22 playlists. Each one consists of full albums (or EPs) that I like. I recommend listening to them on Spotify, but you can preview them all here. The total length of all playlists is about 4000 tracks, or ~11 days.</p>
+      <p class="left-line">I made 22 playlists. Each one consists of full albums (or EPs) that I like. I recommend listening to them on Spotify, but you can preview them all here. The total length of all playlists is about 4000 tracks, or ~11 days.</p>
     </div>
     <div class="col">
       <h3>Spotify Playlists</h3>
-      <p>I recently made the swap to listening to music on Spotify primarily. I wanted a way to keep track of all the favorite albums that I've ever listened to, and even though Spotify isn't a great tool for managing an album "collection", this is what I came up with.</p>
+      <p class="left-line">I recently made the swap to listening to music on Spotify primarily. I wanted a way to keep track of all the favorite albums that I've ever listened to, and even though Spotify isn't a great tool for managing an album "collection", this is what I came up with.</p>
     </div>
     <div class="col">
       <h3>Organization</h3>
-      <p>Each playlist has some sort of unique theme, or maybe a unifying genre or two. I hope you find some new music that speaks to you!</p>
+      <p class="left-line">Each playlist has some sort of unique theme, or maybe a unifying genre or two. I hope you find some new music that speaks to you!</p>
     </div>
   </div>
   <div class="playlist-grid">
